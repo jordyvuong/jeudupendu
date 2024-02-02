@@ -28,7 +28,7 @@ int main() {
     char lettresTrouvees[26];  // J'initialise les lettres
     memset(lettresTrouvees, 0, sizeof(lettresTrouvees)); // Je le met à 0
 
-    int tentatives = 10;
+    int tentatives = 10; //nombre de tentatives
 
     printf("Bienvenue au jeu du Pendu!\n");
     printf("Les règles sont simple, il suffit de deviner le mot mystère en proposant des lettres.\n");
