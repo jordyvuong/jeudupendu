@@ -22,7 +22,7 @@ int lettreDansMot(char lettre, const char* mot, char* lettresTrouvees);
 int main() {
 
     // Choisir un mot aléatoire
-    char* mot = "valorant";
+    char* mot = "ordinateur";
     int longueurMot = strlen(mot);
 
     char lettresTrouvees[26];  // J'initialise les lettres
@@ -93,7 +93,7 @@ int lettreDansMot(char lettre, const char* mot, char* lettresTrouvees) {
             lettresTrouvees[i] = 1;
             trouve = 1;
         }
-        if (i == 7 && trouve == 1) {
+        if (i == strlen(mot) -1 && trouve == 1) {
             return 1;
         }
     }
